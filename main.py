@@ -14,14 +14,21 @@ def f(x):
 # rozwinięcie fourierowskie:
 a0 = 0
 
+def an(n):
+    return 0
+
+def bn(n):
+    return 1/n
+
 def fourier(x, n):
-    return np.sin(n*x)/n
+    return np.cos(n*x)*an(n) + np.sin(n*x)*bn(n)
 
 # inne parametry. Można zostawić:
 precision = 100 # skok na osi x
 k = 500 # liczba składowych rozwinięcia (keep as large as possible)
 t = 0.1 # czas odświeżania wykresu
 
+# main code - no need to change
 def main():
     x = np.linspace(0, 2*math.pi, precision)
     y_org = f(x)
