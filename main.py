@@ -11,6 +11,13 @@ import math
 def f(x):
     return (math.pi - x)/2
 
+# granice przedziału
+#p = math.pi
+#a = -p
+#b = p
+a = 0
+b = 2*math.pi
+
 # rozwinięcie fourierowskie:
 a0 = 0
 
@@ -30,7 +37,7 @@ t = 0.1 # czas odświeżania wykresu
 
 # main code - no need to change
 def main():
-    x = np.linspace(0, 2*math.pi, precision)
+    x = np.linspace(a, b, precision)
     y_org = f(x)
     y = [a0]*precision
     plt.plot(x, y_org)
