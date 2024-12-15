@@ -1,6 +1,6 @@
 ## Intro
 
-Fourierman is a simple Python script that **visualizes**
+Fourier is a simple Python script that **visualizes**
 the Fourier series of a given function and its solution.
 
 It could be used as a validation tool for your Fourier series
